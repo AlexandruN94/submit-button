@@ -7,16 +7,19 @@
 }
 
 .container { 
+
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: antiquewhite;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(178, 47, 169);
 }
 
 .container > form {
+    display: flex;
+    flex-direction: column;
     width: 40%;
 }
 
@@ -30,11 +33,17 @@
     padding: 8px 20px;
     background-color: orange;
     border-radius: 30px;
-    transition: all 0.2s;
+    transition: all 0.1s;
+    width: 120px;
+    transform: translateX(0px)
 }
 
 .button:hover {
     background-color: crimson;
     color: white;
     cursor: pointer;
+}
+
+#message{
+    color: red;
 }
